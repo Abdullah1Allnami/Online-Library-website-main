@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f8ff;
+  font-family: Arial, sans-serif;
+}
+
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.category-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#category-list {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#add-category {
+  width: 7%;
+  background-color: #0074d9;
+  color: #fff;
+  border: none;
+  padding: 5px 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  text-align: center;
+  color: #0074d9;
+  margin: 40px;
+  font-size: 40px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  background-color: #0074d9;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.8s ease;
+  margin: 10px;
+}
+
+input[type="reset"] {
+  background-color: #f44336;
+}
+
+input[type="submit"]:hover {
+  background-color: #005ea6;
+}
+
+input[type="reset"]:hover {
+  background-color: #cc372d;
+}
+
+input,
+select {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+textarea {
+  resize: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline-color: #0074d9;
+  outline-offset: 2px;
+}
+#book_img {
+  display: grid;
+
+  place-items: center;
+}
+#book_img img {
+  width: 200px;
+  height: 200px;
+  margin: 15px;
+  border-radius: 15px;
+}
+.cover-label {
+  background-color: #0074d9;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.8s ease;
+  margin: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.cover-label:hover {
+  background-color: #005ea6;
+}
+#upload-img {
+  display: none;
+}

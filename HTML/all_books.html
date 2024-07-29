@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../CSS/header.css" />
+    <link rel="stylesheet" href="../CSS/footer.css" />
+    <link rel="stylesheet" href="../CSS/product.css" />
+    <script src="https://kit.fontawesome.com/14f7813f17.js" crossorigin="anonymous"></script>
+    <script src="../JS/header.js"></script>
+    <title>Books</title>
+</head>
+
+<body>
+    <div class="search-container">
+        <input type="text" id="searchInput" onkeyup="searchBooks()" placeholder="Search for books...">
+        <select id="categorySelect" onchange="filterByCategory()">
+            <option value="all">All Category</option>
+        </select>
+        <button type="button" id="addBook">Add Book</button>
+    </div>
+
+    <main class="main-books">
+    </main>
+
+    <script src="../JS/footer.js"></script>
+    <script src="../JS/products.js"></script>
+</body>
+
+</html>

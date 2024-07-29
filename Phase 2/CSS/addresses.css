@@ -1,0 +1,38 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap'); */
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+}
+.saved-addresses-title {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 30px;
+}
+.saved-addresses {
+    margin-top: 10px;
+}
+.address-list {
+    margin-top: 30px;
+}
+.addressItem {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+.addressItem:hover {
+    background-color: #f9f9f9;
+}
+
+footer {
+    margin-top: auto;
+}
+
+

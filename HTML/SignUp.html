@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SignUp</title>
+        <meta charset="UTF-8" />
+        <meta name="Sign Up" content="Create a new account">
+
+        <link rel="stylesheet" href="../CSS/header.css">
+        <link rel="stylesheet" href="../CSS/footer.css">
+        <link rel="stylesheet" href="../CSS/signUp.css">
+        <script src="https://kit.fontawesome.com/14f7813f17.js" crossorigin="anonymous"></script>
+        <script src="../JS/header.js"></script>
+    </head>
+    <body>
+        
+        <h1 class="page-title"> Sign Up</h1>
+
+        <main class="container">
+            <form class="signup-content">
+                <div class="user-name-box">
+                    <input type="text" id="user-input" placeholder="User name">
+                    <!-- <label class="user-name-label" for="user-input"> User name</label> -->
+                </div>
+                
+                <div class="password-box">
+                    <input type="password" id="password-input"  placeholder="Password" >
+                    <i class="fa-solid fa-eye" id="open-eye"></i>
+                    <i class="fa-solid fa-eye-slash" id="close-eye"></i>
+                </div>
+                
+                <div class="confirm-password-box">
+                    <input type="password" id="confirm-input" placeholder="Confirm-Password" >
+                    <!-- <label class="confirm-label" id="password-label" for="password-input"> Confirm Password</label> -->
+                </div>
+
+                <div class="email-box">
+                    <input type="text" id="email-input" placeholder="Email" >
+                    <!-- <label class="email-label" for="email-input" placeholder="Email"> email</label> -->
+                </div>
+                
+                <div class="user-type">
+
+                    <div class="user type-active" id="user">
+                        <i class="fa-solid fa-user"></i>
+                        <span>user</span>
+                    </div>
+                    <div class="admin" id="admin">
+                        <i class="fa-solid fa-user-tie"></i>
+                        <span>admin</span>
+                    </div>
+                    
+                </div>
+
+                
+                
+                <div class="sinup-button">Sign Up</div>
+                <a href="Login.html"> already exist an account? <strong>Log In</strong></a>
+            </form>
+            
+            <div class="banner">
+                <img src="../img/Library.png" alt="">
+            </div>
+        </main>
+        <script src="../JS/signUp.js"></script>
+        <script src="../JS/footer.js"></script>
+    </body>
+        
+</html>

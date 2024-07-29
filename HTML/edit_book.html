@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Edit Book</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../CSS/edit_book.css" />
+    <link rel="stylesheet" href="../CSS/header.css" />
+    <link rel="stylesheet" href="../CSS/footer.css" />
+    <script src="../JS/header.js"></script>
+  </head>
+
+  <body>
+    <h2>Edit Book</h2>
+    <form action="" id="book_details">
+      <div id="book_img">
+        <label for="book_img">Book Cover</label>
+        <img
+          src="../img/book-cover-placeholder.png"
+          alt="placeholder"
+          id="cover-pic"
+        />
+        <input type="file" name="" id="upload-img" accept="image/*" />
+        <label for="upload-img" class="cover-label">Upload Cover Photo</label>
+      </div>
+
+      <label for="book_title">Book Title</label>
+      <input type="text" name="" id="book_title" />
+
+      <label for="description">Book description</label>
+      <textarea
+        name="description"
+        id="description"
+        placeholder="Write description here"
+        cols="50"
+        rows="5"
+      ></textarea>
+      <label for="author_name">Author Name</label>
+      <input type="text" name="" id="author_name" />
+      <label for="publish_date">Publish Date</label>
+      <input type="date" name="" id="publish_date" />
+      <label for="category">Book Category</label>
+      <div class="category-container">
+        <select name="category" id="category-list">
+          <option value="" disabled selected hidden>Select book category</option>
+        </select>
+        <button id="add-category" type="button">+</button>
+      </div>
+      <!-- <input type="number" name="" id="price" required> -->
+      <div class="button-container">
+        <input type="submit" name="" id="" value="Update" />
+        <input type="reset" name="" id="reset_button" value="Reset" />
+      </div>
+    </form>
+        <script src="../JS/header.js"></script>
+    <script src="../JS/edit_book.js"></script>
+    <script src="../JS/footer.js"></script>
+  </body>
+</html>

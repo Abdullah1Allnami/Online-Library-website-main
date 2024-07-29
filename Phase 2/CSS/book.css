@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: sans-serif; */
+}
+ul {
+    list-style: none;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.page-body {
+    width: 1000px;
+    margin: 50px auto;
+}
+
+/* ************* Overview section *************** */
+hr {
+    border: none;
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.445);
+    margin: 10px auto;
+}
+
+.overview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+/* ****************** Left side ***************** */
+.image-side {
+    width: 30%;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+#book-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.zoom-container {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 60vw;
+    height: 85vh;
+    overflow: hidden;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
+    border: 2px solid white;
+    background-color: white;
+    z-index: 1000;
+    display: none;
+}
+
+#zoomed-image {
+    height: 300%;
+    transform: translate(0%, 0%);
+}
+
+#status-banner {
+    position: absolute;
+    top: 26px;
+    right: -31px;
+    width: 145px;
+    padding: 6px;
+    text-align: center;
+    background-color: #9e9e9e;
+    transform: rotate(45deg);
+    user-select: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.admin-btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.admin-btns button {
+    color: white;
+    padding: 10px;
+    width: 40%;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.3);
+    transition: 0.3s opacity;
+    position: relative;
+}
+.admin-btns button span {
+    position: absolute;
+    font-size: 20px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#edit-btn {
+    background-color: #2196f3;
+}
+#remove-btn {
+    background-color: #f44336;
+}
+
+.admin-btns button:hover {
+    opacity: 0.7;
+}
+
+.admin-btns button:active {
+    transform: translateY(1px);
+}
+
+/* ****************** Right side ***************** */
+.book-info-side {
+    width: 60%;
+}
+
+.book-title {
+    margin-bottom: 10px;
+}
+
+.book-title h1 {
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.book-title p {
+    text-decoration: none;
+    color: #2196f3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.book-title p::before {
+    content: "by";
+    font-size: 0.9rem;
+    margin: auto 10px;
+    color: black;
+}
+
+.book-title p::after {
+    content: "(author)";
+    margin-left: 10px;
+    color: #33333370;
+}
+
+/* Rating section */
+.rating {
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+.stars {
+    margin-right: 15px;
+}
+
+.checked {
+    color: orange;
+}
+
+.reviews-count {
+    color: #9e9e9e;
+}
+
+/* Book categories & publish date */
+.book-info {
+    margin: 20px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.book-info div {
+    margin-bottom: 30px;
+}
+
+.sub-title {
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.63);
+    font-size: 0.9rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    width: 100px;
+}
+
+.category-line {
+    margin: 10px auto 30px;
+}
+
+#date-field,
+#category-field {
+    display: inline-block;
+    color: #2196f3a1;
+}
+
+/* Availability status */
+.status {
+    background-color: #9e9e9e;
+    margin: 20px 0;
+    color: white;
+    width: fit-content;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    text-align: left;
+    border-radius: 50px;
+    user-select: none;
+    padding-left: 40px;
+    position: relative;
+}
+
+#status-icon {
+    color: white;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 10px;
+    top: 6px;
+}
+
+.buttons {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+    column-gap: 10px;
+    margin-top: 40px;
+}
+
+.button {
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: 0.3s opacity;
+}
+
+.borrow-btn {
+    background-color: #1f1f1f;
+    border: none;
+    color: white;
+}
+
+.fav-btn {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+}
+
+.button:hover {
+    opacity: 0.7;
+}
+
+.button:active {
+    transform: translateY(1px);
+}
+
+/* *********** Description ********* */
+.description {
+    margin-top: 50px;
+    width: 70%;
+}
+
+.description h2 {
+    font-size: 1.8rem;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.description p {
+    margin: 20px auto;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 24px;
+}
+
+/* Disabled buttons */
+button:disabled {
+    opacity: 0.7;
+}
+button:disabled:active {
+    transform: none;
+}
+
+/* Medium screens */
+@media screen and (max-width: 1200px) {
+    .page-body {
+        width: 900px;
+    }
+    #status-banner {
+        font-size: 0.8rem;
+        padding: 5px;
+        top: 20px;
+        right: -37px;
+    }
+}
+
+
+
+/* Small screens */
+@media screen and (max-width: 992px) {
+    .page-body {
+        width: 700px;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+    .page-body {
+        width: 550px;
+    }
+    .overview {
+        height: 1350px;
+    }
+}
+
+/* Mobiles */
+@media screen and (max-width: 591px) {
+    .page-body {
+        width: 300px;
+    }
+    .overview {
+        height: 1000px;
+    }
+}
+
+/* Custom for horizontal view screens */
+@media screen and (max-width: 768px) {
+    .overview {
+        width: 100%;
+        justify-content: center;
+        align-items: space-between;
+    }
+    .image-side {
+        width: 100%;
+    }
+    .book-info-side {
+        width: 100%;
+    }
+    .description {
+        width: 100%;
+    }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Book Profile</title>
+  <link rel="shortcut icon" type="x-icon" href="../img/ICON.png" />
+  <link rel="stylesheet" href="../CSS/header.css" />
+  <link rel="stylesheet" href="../CSS/footer.css" />
+  <link rel="stylesheet" href="../CSS/book.css" />
+
+  <!-- Icon Libraries -->
+  <link rel="shortcut icon" type="x-icon" href="../img/ICON.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="../JS/header.js"></script>
+</head>
+
+<body>
+  <div class="page-body">
+    <div class="overview">
+      <div class="image-side">
+        <div class="image-container">
+          <img src="../img/book-cover-placeholder.png" id="book-image" />
+          <div id="status-banner">Undefined</div>
+        </div>
+        <div class="zoom-box"></div>
+      </div>
+      <div class="book-info-side">
+        <div class="book-title">
+          <!-- For title -->
+          <h1>Undefined</h1>
+          <!-- For author -->
+          <p>Unknown</p>
+        </div>
+        <hr />
+        <div class="book-info">
+          <div class="info-line rating-line">
+            <p class="info-title">Rating:</p>
+            <div class="stars info-field" id="rate">
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+          </div>
+          <div class="info-line category-line">
+            <p class="info-title">Category:</p>
+            <p class="info-field" id="category-field">Undefined</p>
+          </div>
+          <div class="info-line publish-date-line">
+            <p class="info-title">Publish date:</p>
+            <p class="info-field" id="date-field">Undefined</p>
+          </div>
+        </div>
+        <hr />
+        <div class="status-field">
+          <span class="material-symbols-rounded" id="status-field-icon">
+            check_circle
+          </span>
+          <p id="status-field-text">
+            Undefined
+          </p>
+        </div>
+        <hr />
+
+        <div class="buttons">
+          <div class="dynamic-buttons">
+            <button class="borrow-button button" id="borrow-button" data-state="0">
+              <span class="material-symbols-rounded icon">book</span>
+              Borrow
+            </button>
+
+            <div class="admin-buttons">
+              <button class="edit-button button">
+                <span class="material-symbols-rounded icon">edit</span>
+                Edit
+              </button>
+              <button class="delete-button button">
+                <span class="material-symbols-rounded icon">delete</span>
+                Remove
+              </button>
+            </div>
+
+          </div>
+          <div class="favorite-button" id="favorite-button" data-state="0">
+            <div class="heart-bg">
+              <div class="heart-icon"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="description">
+      <h3>Description</h3>
+      <p></p>
+    </div>
+  </div>
+</body>
+<script src="../JS/footer.js"></script>
+<script src="../JS/book.js"></script>
+
+</html>

@@ -1,0 +1,164 @@
+.change-photo{
+    display: flex;
+}
+
+/* ------------- special for account details ------------- */
+
+.sidebar .profile-options-list .ProfileDetails {
+    border-right: #0063D8 3px solid;
+}
+
+.sidebar .profile-options-list .ProfileDetails a {
+    color: #0063D8;
+    padding-left: 15px;
+}
+
+.sidebar .profile-options-list i{
+    font-size: 20px;
+}
+
+/* ---------personal info container ---------- */
+
+
+.content .personal-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 3;
+}
+
+.content .personal-info-container > div + div{
+    margin-top: 50px;
+}
+
+.personal-info-container .edit-user-info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    /* align-items:center; */
+}
+
+#username-and-email-container {
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+}
+#first-name-input , #second-name-input{
+    margin-right: 40px;
+}
+
+.lower-section .personal-info-container .edit-user-info .password-input-container {
+    margin-left: 1%;
+}
+
+#first-name-input-container{
+    margin-right: 2%;
+}
+
+/* #second-name-input-container{
+} */
+#user-email-input, #phone-number-input {
+    margin-right: 20px;
+}
+
+#save-changes-btn-container .save-changes-btn {
+    background-color: #0063D8;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#save-changes-btn-container .save-changes-btn:hover {
+    background-color: white;
+    color: #0063D8;
+}
+
+
+/*---------------------------------*/
+
+input{
+    width: 350px;
+    height: 45px;
+    background-color: #efefef;
+    color:black;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-color:#efefef;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+}
+
+
+#user-email-input , #phone-number-input{
+    width: 760px;
+}
+
+input:focus{
+    outline-color:#0063D8;
+    box-shadow: none;
+}
+
+label{
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.username-box{
+    margin-bottom: 20px;
+}
+.password-box{
+    display: flex;
+    align-items: center;
+}
+.password-box img{
+    width: 32px;
+    margin-top: -10px;
+    margin-left: -40px;
+    cursor: pointer;
+}
+
+p {
+    display: block;
+    margin: 20px;
+}
+fieldset {
+    margin: 10px;
+}
+
+.personal-info-container  #save-changes-btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#personal-info-container .save-changes-btn-container .save-account-details-btn{
+    display: block;
+    margin: 0 auto;
+}
+
+#save-account-details-btn {
+    width: 200px;
+    height: 50px;
+    margin: 20px 0px 20px 10px;
+    padding: 10px;
+    border-radius: 20rem;
+    font-size: 18px;
+    font-family: monospace;
+    background-color: #0063D8;
+    color: #fff;
+    border: none;
+    box-shadow: #1c1c1d;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: auto;
+}
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Log In</title>
+    <meta charset="UTF-8" />
+    <meta name="Login" content="Enter to account" />
+
+    <link rel="stylesheet" href="../CSS/header.css" />
+    <link rel="stylesheet" href="../CSS/Login.css" />
+    <link rel="stylesheet" href="../CSS/footer.css" />
+    <script
+      src="https://kit.fontawesome.com/14f7813f17.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../JS/header.js"></script>
+  </head>
+
+  <body>
+    <h1 class="page-title">Log In</h1>
+
+    <main class="container">
+      <form class="login-content">
+        <div class="user-name-box">
+          <input type="text" id="user-input" placeholder="User name" />
+          <!-- <span class=""><i class="fa-solid fa-circle-xmark"></i> user name dose not exist</span> -->
+          <!-- <label class="user-name-label" for="user-input"> User name</label> -->
+        </div>
+        
+        <div class="password-box">
+          <input type="password" id="password-input" placeholder="Password"/>
+          <!-- <span class="invalid-label"><i class="fa-solid fa-circle-xmark"></i> user name dose not exist</span> -->
+          <!-- <span class="valid-label"><i class="fa-solid fa-circle-check"></i> valid user name</span> -->
+          <!-- <label class="password-label" id="password-label" for="password-input"> Password</label> -->
+          <a href="#">Forget Password ?</a>
+          <i class="fa-solid fa-eye" id="open-eye"></i>
+          <i class="fa-solid fa-eye-slash" id="close-eye"></i>
+        </div>
+
+        <!-- <input class="login-button" type="submit" value="Log In" /> -->
+        <div class="login-button"> Log In</div>
+        <a href="SignUp.html">Don't have an account? <strong>Sign Up</strong></a>
+      </form>
+
+      <div class="banner">
+        <img src="../img/login_photo.png" alt="" />
+      </div>
+    </main>
+
+    <script src="../JS/login.js"></script>
+    <script src="../JS/footer.js"></script>
+  </body>
+</html>

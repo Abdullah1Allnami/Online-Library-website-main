@@ -1,0 +1,128 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #f0f8ff;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+
+
+.Book {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
+    margin-left: 20px;
+    width: 220px;
+}
+
+.background-img {
+    background-color: #E7EFF2;
+    display: flex;
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-img img {
+  /* width: 100%; */
+  width: 150px;
+  height: 180px;
+  border-radius: 10px;
+  /* object-fit: contain; */
+}
+.background-img a {
+  /* width: 100%; */
+}
+
+.Book button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: hsl(202, 96%, 37%);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.Book button:hover {
+    background-color: hsl(202, 96%, 47%);
+}
+
+.content {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content h3,
+.content span {
+    margin-bottom: 5px;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1em;
+}
+
+.content span {
+    font-size: 10px;
+    margin-bottom: 30px;
+    color: #666;
+    overflow: hidden;
+}
+
+.search-container input[type="text"] {
+    margin-right: 10px;
+    margin-left: 60px;
+    width: 60%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.search-container select {
+    width: 20%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin: 20px 20px 20px 40px;
+}
+
+.search-container button {
+    width: 20%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-right: 10px;
+    background-color: hsl(202, 96%, 37%);
+    color: #fff;
+}
+
+.search-container button:hover {
+    background-color: hsl(202, 96%, 47%);
+}

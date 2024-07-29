@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Book Profile</title>
+    <link rel="shortcut icon" type="x-icon" href="../img/ICON.png" />
+    <link rel="stylesheet" href="../CSS/header.css" />
+    <link rel="stylesheet" href="../CSS/footer.css" />
+    <link rel="stylesheet" href="../CSS/book.css" />
+
+    <!-- Icon Libraries -->
+    <link rel="shortcut icon" type="x-icon" href="../img/ICON.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../JS/header.js"></script>
+  </head>
+  <body>
+    <div class="page-body">
+      <div class="overview">
+        <div class="image-side">
+          <div class="image-container">
+            <img src="../img/book-cover-placeholder.png" id="book-image" />
+            <div id="status-banner"></div>
+          </div>
+          <div class="zoom-container">
+            <img src="../img/book-cover-placeholder.png" id="zoomed-image" />
+          </div>
+        </div>
+        <div class="book-info-side">
+          <div class="book-title">
+            <h1></h1>
+            <p></p>
+          </div>
+          <div class="rating">
+            <div class="stars" id="rate">
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p class="reviews-count">
+              <span id="review-num">1,000+</span> reviews
+            </p>
+          </div>
+          <hr class="sub-spacer" />
+          <div class="book-info">
+            <div class="category-line">
+              <p class="sub-title">Category</p>
+              <p id="category-field"></p>
+            </div>
+            <div class="publish-date-line">
+              <p class="sub-title">Publish Date</p>
+              <p id="date-field"></p>
+            </div>
+          </div>
+          <hr class="sub-spacer" />
+          <div class="status" id="status-block">
+            <span class="material-symbols-rounded" id="status-icon">
+              mood
+            </span>
+          </div>
+          <div class="buttons">
+            <button type="submit" class="borrow-btn button" id="borrow-btn">
+              Borrow
+            </button>
+            <button type="submit" class="fav-btn button" id="fav-btn">
+              Add to favourites
+            </button>
+          </div>
+        </div>
+      </div>
+      <hr class="main-spacer" />
+      <div class="description">
+        <h2>Description</h2>
+        <p></p>
+      </div>
+    </div>
+  </body>
+  <script src="../JS/footer.js"></script>
+  <script src="../JS/book.js"></script>
+</html>

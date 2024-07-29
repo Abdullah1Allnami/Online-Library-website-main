@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Account Details</title>
+        <meta charset="UTF-8" />
+        <link rel="shortcut icon" type="x-icon" href="../img/ICON.png">
+        <link rel="stylesheet" href="../CSS/header.css" />
+        <link rel="stylesheet" href="../CSS/footer.css" />
+        <link rel="stylesheet" href="../CSS/siderbar.css">
+        <script src="../JS/header.js"></script>
+        <link rel="stylesheet" href="../CSS/AccountDetails.css"/>
+        <script src="https://kit.fontawesome.com/14f7813f17.js" crossorigin="anonymous"></script>
+
+    </head>
+    
+    <body>
+      <h1 class="page-header"> Account Details</h1>
+      
+      <div class="content" id="content">
+
+        <div class="sidebar">
+        </div>
+        
+        <div class="personal-info-container">
+          
+          <form class="edit-user-info">
+            <div id="username-and-email-container">
+              
+                <div id="first-name-input-container">
+                  <label for="first-name-input" class="first-name-label">First name</label>
+                  <input type="text" name="first-name-input" id="first-name-input" placeholder="First name" />
+                </div>
+                
+                <div id="second-name-input-container">
+                  <label for="second-name-input" class="second-name-label">Second name</label>
+                  <input type="text" name="second-name-input" id="second-name-input" autocomplete="email" placeholder="Second name" />
+                </div>
+              
+              </div>
+
+              <div id="email-input-container"> 
+                <label for="user-email-input" class="user-info-label" aria-hidden="true">Email</label>
+                <input type="text" name="user-email-input" id="user-email-input" placeholder="example" />
+              </div>
+
+              <div id="phone-number-container">
+                  <label for="phone-number-input" class="user-info-label">Phone number</label>
+                  <input type="text" name="phone-number-input" id="phone-number-input" placeholder="01213456789" />
+              </div>
+
+              <fieldset class="password-input-container">
+                  <legend>Change password</legend>
+                  <p class="current-password-input">
+                      <label for="password_current">Current password</label>
+                      <input type="password" name="current-password-input" id="current-password-input" autocomplete="off" />                    </p>
+                  <p class="new-password-input">
+                      <label for="new-password-1">New password</label>
+                      <input type="password" name="new-password-1" id="new-password-1" autocomplete="off" /> 
+                  </p>
+                  <p class="confirm-new-password-input">
+                      <label for="new-password-2">Confirm new password</label>
+                      <input type="password" name="new-password-2" id="new-password-2" autocomplete="off" />
+                  </p>
+              </fieldset>
+              <div id="save-changes-btn-container">
+                  <button type="submit" class="save-changes-btn" name="save-account-details-btn" id="save-account-details-btn">Save changes </button>
+              </div>
+          </form>
+        </div>
+
+      </div>
+      <script src="../JS/sidebar.js"></script>
+      <script src="../JS/AccountDetails.js"></script>
+      <script src="../JS/footer.js"></script>
+    </body>
+</html>

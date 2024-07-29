@@ -1,0 +1,201 @@
+/* ------------- special for order page ------------- */
+
+.sidebar .profile-options-list .profileOrders {
+    border-right: #0063D8 3px solid;
+}
+
+.sidebar .profile-options-list .profileOrders a {
+    color: #0063D8;
+    padding-left: 10px;
+}
+
+.sidebar .profile-options-list i{
+    font-size: 20px;
+}
+/* ---------------- */
+
+
+
+.order-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 100px;
+}
+
+.order-list > div + div{
+    margin-top: 50px;
+}
+
+
+
+/* order */
+.order {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    align-items: center;
+    background-color: #f0f9ff;
+    cursor: pointer;
+    width: 900px;
+}
+
+.order .order-id {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium';
+    color: #aec4c9;
+}
+
+.order .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.order .info .title {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium';
+    padding: 0px;
+}
+
+.order .info .order-date-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#order-date {
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    background-color:#aab9c4;
+    border-radius: 70px;
+}
+
+#order-address {
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    background-color:#aab9c4;
+    border-radius: 70px;
+}
+
+/* order-status */
+
+#in-use-order-status {
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 2px solid #13961367;
+    background-color:#13961367;
+    border-radius: 70px;
+}
+
+#late-order-status {
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 2px solid #ff0000;
+    background-color:#db0b0b71;
+    border-radius: 70px;
+}
+
+#returned-order-status {
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 2px solid #ffd000;
+    background-color:#ffd0005e;
+    border-radius: 70px;
+}
+
+/* ------------------------ */
+
+.order .info .des {
+    display: flex;
+    font-size: 20px;
+    height: 70%;
+    padding: 10px;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+/* ------------------------ */
+
+/* Order price and cover */
+
+.order .cover-and-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order #book-cover, .order #order-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#order-price {
+    font-size: 20px;
+    font-weight: bold;
+    font-family:'Verdana';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#book-cover {
+    min-width: 100%;
+    min-height: 100%;
+    border-radius: 10px;
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+#book-cover img {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    object-fit: cover;
+}
+
+.order:hover {
+    background-color: #ced6df;
+}
+
+/* ----------Buttons--under work------------ */
+
+.order.expanded {
+    height: auto;
+}
+#toggle-buttons {
+    position:relative;
+    bottom: 0;
+    right: 0;
+    display:none;
+}
+.order.expanded .toggle-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {    
+    margin-top: auto;
+}
+

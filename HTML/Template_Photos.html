@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Upload, Retrieve, Update, Delete Photo</title>
+</head>
+
+<body>
+    <input type="file" id="fileInput">
+    <button onclick="uploadPhoto()">Upload</button>
+    <br>
+    <input type="text" id="photoIdInput" placeholder="Enter photo ID">
+    <button onclick="getPhoto()">Get Photo</button>
+    <button onclick="updatePhoto()">Update Photo</button>
+    <button onclick="deletePhoto()">Delete Photo</button>
+    <br>
+    <img id="photoDisplay" alt="Uploaded Photo" style="display:none;">
+
+    <script>
+        async function uploadPhoto() {
+            const fileInput = document.getElementById('fileInput');
+            const file = fileInput.files[0];
+            const formData = new FormData();
+            formData.append('image', file);
+
+            try {
+                const response = await fetch('http://127.0.0.1:8000/photo/', {
+                    method: 'POST',
+                    body: formData,
+                });
+
+                const data = await response.json();
+                console.log(data);
+                alert(`Photo uploaded with ID: ${data.id}`);
+            } catch (error) {
+                console.error('Error uploading photo:', error);
+            }
+        }
+
+        async function getPhoto() {
+            const photoIdInput = document.getElementById('photoIdInput');
+            const photoId = photoIdInput.value;
+
+            try {
+                const response = await fetch(`http://127.0.0.1:8000/photo/${photoId}/`, {
+                    method: 'GET',
+                });
+
+                if (response.ok) {
+                    const blob = await response.blob();
+                    const url = URL.createObjectURL(blob);
+                    const photoDisplay = document.getElementById('photoDisplay');
+                    photoDisplay.src = url;
+                    photoDisplay.style.display = 'block';
+                } else {
+                    console.error('Photo not found');
+                }
+            } catch (error) {
+                console.error('Error fetching photo:', error);
+            }
+        }
+
+        async function updatePhoto() {
+            const photoIdInput = document.getElementById('photoIdInput');
+            const photoId = photoIdInput.value;
+
+            const fileInput = document.getElementById('fileInput');
+            const file = fileInput.files[0];
+            const formData = new FormData();
+            formData.append('image', file);
+
+            try {
+                const response = await fetch(`http://127.0.0.1:8000/photo/${photoId}/`, {
+                    method: 'PUT',
+                    body: formData,
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    console.log('Photo updated:', data);
+                    alert(`Photo with ID ${photoId} updated successfully.`);
+                } else {
+                    const data = await response.json();
+                    console.error('Error updating photo:', data);
+                    alert(`Error updating photo: ${data.error}`);
+                }
+            } catch (error) {
+                console.error('Error updating photo:', error);
+            }
+        }
+
+        async function deletePhoto() {
+            const photoIdInput = document.getElementById('photoIdInput');
+            const photoId = photoIdInput.value;
+
+            try {
+                const response = await fetch(`http://127.0.0.1:8000/photo/${photoId}/`, {
+                    method: 'DELETE',
+                });
+
+                if (response.ok) {
+                    console.log(`Photo with ID ${photoId} deleted.`);
+                    alert(`Photo with ID ${photoId} deleted successfully.`);
+                    const photoDisplay = document.getElementById('photoDisplay');
+                    photoDisplay.src = '';
+                    photoDisplay.style.display = 'none';
+                    photoIdInput.value = '';
+                } else {
+                    const data = await response.json();
+                    console.error('Error deleting photo:', data);
+                    alert(`Error deleting photo: ${data.error}`);
+                }
+            } catch (error) {
+                console.error('Error deleting photo:', error);
+            }
+        }
+    </script>
+</body>
+
+</html>

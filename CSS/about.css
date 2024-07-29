@@ -1,0 +1,41 @@
+.about-main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 20px;
+    height: 90vh;
+}
+
+.about-main p, .about-main ul{
+    font-size: 20px;
+    color: #333;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.about-main p {
+    margin-bottom: 10%;
+    width: 70%;
+}
+
+.about-main h2 {
+    color: #03045e;
+    margin-top: 10%;
+}
+
+.col1 {
+    /* padding: 20px; */
+    margin-left: 200px;
+    margin-top: 50px;
+
+}
+
+.col1 ul {
+    list-style-type: none;
+    padding-left: 5px;
+
+}
+
+.col2 img {
+    width: 600px;
+    margin-left: 50px;
+}
