@@ -11,8 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
-import django_heroku
-django_heroku.settings(locals())
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -28,7 +27,6 @@ SECRET_KEY = 'django-insecure-(gpy_d-tua-xt+5t++u9dfvdiajf_l(l-s48!o8zh00t*uoiha
 DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
-
 
 
 # Application definition
@@ -132,7 +130,6 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOW_CREDENTIALS = True
 
-
 CORS_ALLOW_METHODS = [
     'GET',
     'POST',
@@ -146,7 +143,6 @@ CORS_ALLOW_HEADERS = [
     'Content-Type',
 ]
 
-
 CSRF_TRUSTED_ORIGINS = [
     'chrome-extension://dmhljjnonlhapikmelaefohecogokhio',
     'https://app.apidog.com/project/530394',
@@ -157,8 +153,10 @@ CSRF_TRUSTED_ORIGINS = [
     'http://app.apidog.com',
 ]
 
-
-import os
-
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+# Configure Django App for Heroku settings
+import django_heroku
+django_heroku.settings(locals())
