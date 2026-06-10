@@ -48,7 +48,7 @@ To set up and run the project locally:
 
 ## Contributors
 
-- **Abdulla**  
+- **Abdullah Saeed**  
 - **Eslam Sayed** [@Eslam-Sayed7](https://github.com/Eslam-Sayed7)  
 - **Sayed**  
 - **Hesham**  
