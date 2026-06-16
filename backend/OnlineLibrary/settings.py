@@ -158,5 +158,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 # Configure Django App for Heroku settings
-import django_heroku
-django_heroku.settings(locals())
+try:
+    import django_heroku
+    django_heroku.settings(locals())
+except ImportError:
+    pass
