@@ -8,9 +8,9 @@ An intuitive and user-friendly online library platform designed to streamline th
 
 Check out the video demonstration of the project below:
 
-<video src="2026-06-16%2009-40-00.mov" width="100%" controls></video>
+<video src="https://github.com/user-attachments/assets/bb95fe16-b62e-47a1-a7da-80782b55025c" width="100%" controls></video>
 
-*If the video above doesn't load, you can watch or download the file directly: [2026-06-16 09-40-00.mov](2026-06-16%2009-40-00.mov)*
+*If the video above doesn't load, you can watch or download the file directly: [Demo Video](https://github.com/user-attachments/assets/bb95fe16-b62e-47a1-a7da-80782b55025c)*
 
 ---
 
